@@ -1,0 +1,115 @@
+/* Setting up the base style */
+body {
+    font-family: Times New Roman, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.letter {
+    width: 21cm; /* A4 width */
+    min-height: 29.7cm; /* A4 height */
+    padding: 2cm;
+    margin: 1cm auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Positioning the sender's information in the top right */
+.sender-info {
+    text-align: right;
+    margin-bottom: 1cm;
+    float: right;
+    width: 50%;
+}
+
+/* Date alignment */
+.sender-info p {
+    margin-top: 0.5cm;
+}
+
+/* Receiver information */
+.receiver-info {
+    clear: both;
+    text-align: left;
+    margin-bottom: 1cm;
+}
+
+/* Subject line */
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+/* Section headings */
+h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 1cm;
+    margin-bottom: 0.5cm;
+}
+
+/* Lists styling */
+ul, ol {
+    margin-left: 1cm;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.3cm;
+}
+
+/* Definition list styling */
+dl {
+    margin-left: 1cm;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 0.5cm;
+}
+
+dd {
+    margin-left: 1cm;
+    margin-bottom: 0.5cm;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Conclusion section */
+.Conclusion {
+    margin-top: 1cm;
+}
+
+/* Strong text */
+strong {
+    font-weight: bold;
+}
+
+/* Address formatting */
+address {
+    font-style: normal;
+}
+
+/* Fix for print */
+@media print {
+    body {
+        background-color: white;
+    }
+    
+    .letter {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        margin: 0;
+        padding: 2cm;
+    }
+}
