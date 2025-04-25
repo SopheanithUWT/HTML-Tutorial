@@ -1,0 +1,130 @@
+/* Basic reset and page setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #00cc66; /* Bright green background */
+    font-size: 16px;
+    border: 2px solid black;
+}
+
+/* Header styles */
+header {
+    background-color: #00cc66; /* Match the body background */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #000;
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #00cc66; /* Match body background */
+    border-top: 3px solid #ccffcc;
+    border-bottom: 3px solid #ccffcc;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    display: flex;
+    background-color: #00cc66; /* Match the body background */
+    padding: 20px;
+    border-top: 3px solid #ccffcc;
+    border-bottom: 3px solid #ccffcc;
+}
+
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.main-content h2 {
+    font-family: 'Times New Roman', serif;
+    color: #660000; /* Dark brownish red */
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.main-content p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+
+.sidebar h2 {
+    font-family: 'Times New Roman', serif;
+    color: #660000; /* Dark brownish red */
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.photo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #00cc66; /* Match the body background */
+    color: #000;
+    padding: 20px;
+    border-top: 3px solid #ccffcc;
+    font-size: 14px;
+}
+
+footer a {
+    color: #000;
+}
